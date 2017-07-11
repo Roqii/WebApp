@@ -1,7 +1,17 @@
-/**
- * Created by Roqii on 2017/7/10.
- */
+;(function (angular) {
+    //开始
+    var app = angular.module('app',[]);
 
-function a() {
-    console.log(0);
-}
+    app.controller('myCtrl', ['$scope', function ($scope) {
+        $scope.webTitle = '每天一看';
+    }]);
+
+
+    app.directive('tabbar', function () {
+        return {
+            restrict: 'EA',
+            templateUrl: '../views/tabbar_tpl.html'
+        };
+    });
+
+})(angular);

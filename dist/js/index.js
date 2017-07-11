@@ -1,1 +1,1 @@
-function a(){console.log(0)}
+!function(t){var r=t.module("app",[]);r.controller("myCtrl",["$scope",function(t){t.webTitle="每天一看"}]),r.directive("tabbar",function(){return{restrict:"EA",templateUrl:"../views/tabbar_tpl.html"}})}(angular);
